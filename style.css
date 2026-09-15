@@ -70,9 +70,10 @@ nav {
 }
 .nav__title {
   font-size: 24px;
-  font: 900 24px "Inter", system-ui;
-  margin-top: 24px;
-  transform: translateX(-180px);
+  font:
+    900 24px "Inter",
+    system-ui;
+  margin-left: 16px;
 }
 
 .nav__links {
@@ -84,13 +85,22 @@ nav {
 
 .nav__links a {
   text-decoration: none;
-  font: 500 16px "Inter", system-ui;
-  
+  font:
+    500 16px "Inter",
+    system-ui;
 }
 .nav__links a:hover {
   color: #6415ff;
   text-decoration: underline;
 }
+.nav__links--login {
+  padding: 8px 16px;
+  background-color: #6415ff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 .btn__menu {
   display: none;
   background: transparent;
@@ -167,17 +177,30 @@ HEADER / ABOUT US ↓
 
 header .row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  padding: 32px 0;
+}
+.header__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.header__title span {
+  color: #6415ff;
+}
+.header__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
 }
 
-/* 
-
-FEATURES ↓
-
-*/
-
-#features {
+FEATURES ↓ */ #features {
   position: relative;
 }
 
