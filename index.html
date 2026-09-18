@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<body>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,6 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="script.js"></script>
 </head>
-
-<body>
     <section id="landing">
         <nav>
             <div class="row nav__row">
@@ -25,7 +24,8 @@
                  <li><a href="#">Blog</a></li>
                  <li><a href="#">Pricing</a></li>
                  <li><a href="#">Contact Us</a></li>
-                 <li><a class="nav__links--login" href="#">Login</a></li>
+                 <li> <a class="nav__links--login" href="#">Login</a></li>
+                 <li><a class="nav__links--sign-up" href="#">Sign Up</a></li>
                 </ul>
                 <button class="btn__menu" onclick="openMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -65,12 +65,12 @@
                 <h3 class="header__title">Beautiful React Templates<span> for you</span></h3>
                 <p class="header__subtitle">Our templates are easy to setup, understand and customize. Fully <br> modular components with a variety of pages and components.</p>
                 <div class="header__buttons">
-                    <input type="text" placeholder="Enter Your Email Address">
+                    <input type="text" placeholder="Your Email Address">
                     <button>Get Started</button>
                 </div>
                 <div class="header__logo-strip">
                     <p>OUR TRUSTED CUSTOMERS<p>
-                    <img src="/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png">
+                    <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png">
                 </div>
                </div>
                <div class="header__image">
@@ -83,14 +83,73 @@
         <section id="features">
             <div class="container">
                 <div class="row__narrow">
-                    <!--  -->Enter Features Section<!--  -->
-                </div>
-            </div>
+                  <div class="feature">
+                    <h3 class="feature__title">FEATURES</h3>
+                    <h2 class="feature__subtitle"> We have Amazing<span class="subtitle-highlight"> Service.</span></h2>
+                      
+                        
+                    <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="features__TwoColumns--container">
+                     <div class="features__TwoColumns--column">
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src= "simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">Secure</span>
+                              <p class="description">We strictly only deal with vendors that provide top notch security.</p>
+                          </span>
+                       </div>
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src= "assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">Customizable</span>
+                              <p class="description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                          </span>
+                       </div>
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">Fast</span>
+                              <p class="description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                          </span>
+                       </div>
+                     </div>
+                     <div class="features__TwoColumns--column">
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src= "assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">24/7 Support</span>
+                              <p class="description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                          </span>
+                       </div>
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src= "assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">Reliable</span>
+                              <p class="description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                          </span>
+                       </div>
+                       <div class="features__TwoColumns--card">
+                          <span class="imageContainer"><img src= "simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"></span>
+                          <span class="textContainer">
+                              <span class="textContainer ">Easy</span>
+                              <p class="description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                          </span>
+                       </div>
+                     </div>
+                    </div>
         </section>
         <section id="quality">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Quality Work Section<!--  -->
+                 <div class="quality__work--image">
+                    <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png">
+                   <div class="quality__work--button" >
+                    <h5 class="quality__work--title">Quality Work</h5>
+                    <h2 class="quality__work--subheading">Designed & Developed by <span>Professionals.</span></h2>
+                    <p class="quality__work--text ">" Lorem ipsum dolor sit amet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="https://timerse.com" class="quality__work--button-link">Learn More</a>
+                   </div>
+                  </div>
                 </div>
             </div>
         </section>

@@ -78,9 +78,10 @@ nav {
 
 .nav__links {
   display: flex;
-  gap: 70px;
+  gap: 50px;
   list-style: none;
   transform: translateY(28px);
+  margin-left: 120px;
 }
 
 .nav__links a {
@@ -94,10 +95,18 @@ nav {
   text-decoration: underline;
 }
 .nav__links--login {
-  padding: 8px 16px;
+  margin-left: 80px;
+}
+.nav__links--sign-up {
+  display: inline-block;
+  white-space: nowrap;
+  transform: translateY(-10px);
+  margin: bottom 100px;
+  margin-left: 10px;
+  padding: 12px 26px;
   background-color: #6415ff;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 20px;
   text-decoration: none;
 }
 
@@ -182,7 +191,8 @@ header .row {
   gap: 12px;
   justify-content: space-between;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
+  margin: 0 auto;
   min-height: 80vh;
   padding: 32px 0;
 }
@@ -201,20 +211,92 @@ header .row {
   font-size: 16px;
   line-height: 24px;
   display: flex;
+  margin-top: 20px;
 }
 .header__image {
-  width: 60%;
+  width: 48%;
 }
 
 .header__image img {
   width: 100%;
   height: auto;
 }
+.header__logo-strip {
+  margin-top: 60px;
+}
+
+.header__logo-strip p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(147, 145, 145);
+  font-weight: 600;
+}
+.header__logo-strip img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
 .header__buttons {
-  box-sizing:border-box;
-  border-width: 0px;
-  border-style: solid;
-  border-color: rgb(226, 232, 240);
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28rem;
+  margin-top: 30px;
+}
+
+.header__buttons input {
+  width: 100%;
+  border: 2px solid #f0f2f4;
+  border-radius: 9999px;
+  padding: 1.625rem 9rem 1.625rem 2rem;
+  font-weight: 500;
+}
+
+.header__buttons input::placeholder {
+  opacity: 0.5;
+}
+
+.header__buttons button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 8rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #6415ff;
+  color: #f7fafc;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.header__buttons button:hover {
+  background-color: #1e3a8a;
+}
+.header__buttons button[role="button"] {
+  cursor: pointer;
+}
+.header__buttons button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  appearance: none;
+  background-image: none;
+}
+.header__buttons button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* FEATURES */
@@ -226,6 +308,93 @@ header .row {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#features .container {
+  padding: 80px 0;
+}
+#features .row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features__title {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.feature__title,
+.feature__subtitle {
+  text-align: center;
+}
+
+.feature__subtitle {
+  transform: translateY(-30px);
+  font-size: 3rem;
+  font-weight: 800;
+  max-width: 100%;
+}
+
+.feature__title {
+  transform: translateY(-50px);
+  color: #2563eb;
+  letter-spacing: 4px;
+}
+.feature__description {
+  text-align: center;
+  font-size: 1.1rem;
+  transform: translateY(-10px);
+}
+.subtitle-highlight {
+  color: #2563eb;
+}
+.features__TwoColumns--container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 75px;
+  width: 100%;
+}
+.features__TwoColumns--column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.features__TwoColumns--card {
+  display: flex;
+  margin-bottom: 90px;
+}
+.features__TwoColumns--card .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.features__TwoColumns--card .imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.features__TwoColumns--card .textContainer .textContainer {
+  display: inline-block;
+  transform: translate(30px, -20px);
+  font-size: 30px;
+  font-weight: 600;
+}
+.features__TwoColumns--card .textContainer .description {
+  margin-left: 30px;
+  max-width: 280px;
+  font-size: 18px;
+  line-height: 40px;
+  color: rgb(95, 94, 94);
+}
+.text__container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* 
@@ -317,16 +486,53 @@ MOBILE RESPONSIVENESS ↓
 
 */
 
-@media (max-width: 1280px) {
+@media (max-width: 1040px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
   header .row {
     align-items: flex-end;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .btn__menu {
     display: block;
   }
+
+  .header__content,
+  .header__buttons {
+    width: 100%;
+  }
+
+  .header__title,
+  .header__subtitle {
+    text-align: center;
+  }
+
+  .header__subtitle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__logo-strip img {
+    width: 70%;
+  }
+
+  .header__buttons input {
+    padding-right: 7.5rem;
+    font-size: 14px;
+  }
+
+  .header__buttons button {
+    width: 7rem;
+  }
+
   header .row {
     flex-direction: column;
     align-items: center;
@@ -348,6 +554,45 @@ MOBILE RESPONSIVENESS ↓
   }
   #pricing .row {
     margin-top: 40px;
+  }
+  #features .container {
+    padding: 60px 0;
+  }
+  .features__TwoColumns--container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .features__TwoColumns--card {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .features__TwoColumns--column {
+    display: contents;
+  }
+  .features__TwoColumns--column:nth-of-type(1)
+    .features__TwoColumns--card:nth-child(1) {
+    order: 1;
+  }
+  .features__TwoColumns--column:nth-of-type(2)
+    .features__TwoColumns--card:nth-child(1) {
+    order: 2;
+  }
+  .features__TwoColumns--column:nth-of-type(1)
+    .features__TwoColumns--card:nth-child(2) {
+    order: 3;
+  }
+  .features__TwoColumns--column:nth-of-type(2)
+    .features__TwoColumns--card:nth-child(2) {
+    order: 4;
+  }
+  .features__TwoColumns--column:nth-of-type(1)
+    .features__TwoColumns--card:nth-child(3) {
+    order: 5;
+  }
+  .features__TwoColumns--column:nth-of-type(2)
+    .features__TwoColumns--card:nth-child(3) {
+    order: 6;
   }
 }
 
